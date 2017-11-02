@@ -1,9 +1,12 @@
 ﻿namespace AkkaTutorial.IOT.Messages
 {
-    internal sealed class ReadTemperature
+    public sealed class ReadTemperature
     {
-        public static ReadTemperature Instance { get; } = new ReadTemperature();
+        public ReadTemperature(long requestId)
+        {
+            RequestId = requestId;
+        }
 
-        private ReadTemperature() { }
+        public long RequestId { get; }
     }
 }

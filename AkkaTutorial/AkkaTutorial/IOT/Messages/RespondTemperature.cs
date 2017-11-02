@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AkkaTutorial.IOT.Messages
+﻿namespace AkkaTutorial.IOT.Messages
 {
     internal sealed class RespondTemperature
     {
-        public RespondTemperature(double? value)
+        public RespondTemperature(long requestId, double? value)
         {
+            RequestId = requestId;
             Value = value;
         }
 
+        public long RequestId { get; }
         public double? Value { get; }
     }
 }
