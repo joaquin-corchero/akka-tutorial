@@ -11,8 +11,11 @@ namespace AkkaTutorial
             Console.WriteLine($"1 - {nameof(StartStructureOfIActorRedAndPaths)}");
             StartStructureOfIActorRedAndPaths.StartSystem();
             Console.ReadLine();
-            Console.WriteLine($"1 - {nameof(HierarchyAndLifecycleOfActors)}");
+            Console.WriteLine($"2 - {nameof(HierarchyAndLifecycleOfActors)}");
             HierarchyAndLifecycleOfActors.StartSystem();
+            Console.ReadLine();
+            Console.WriteLine($"3 - {nameof(HierarchyAndFailureHandling)}");
+            HierarchyAndFailureHandling.StartSystem();
             Console.ReadLine();
         }
 
