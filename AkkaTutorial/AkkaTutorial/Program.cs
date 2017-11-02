@@ -1,6 +1,6 @@
 ﻿using System;
 using Akka.Actor;
-
+using AkkaTutorial.IOT;
 
 namespace AkkaTutorial
 {
@@ -17,6 +17,10 @@ namespace AkkaTutorial
             Console.WriteLine($"3 - {nameof(HierarchyAndFailureHandling)}");
             HierarchyAndFailureHandling.StartSystem();
             Console.ReadLine();
+
+            Console.WriteLine($"IOT System");
+
+            IotApp.Init();
         }
 
     }
